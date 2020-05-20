@@ -2,35 +2,35 @@ package app;
 
 public class SimpleCalculator implements Calculator {
     
-    private int firstNumber;
-    private int secondNumber;
+    private double firstNumber;
+    private double secondNumber;
 
     
-    public int getFirstNumber() {
+    public double getFirstNumber() {
         return firstNumber;
     }
 
-    public void setFirstNumber(int firstNumber) {
+    public void setFirstNumber(double firstNumber) {
         this.firstNumber = firstNumber;
     }
 
-    public int getSecondNumber() {
+    public double getSecondNumber() {
         return secondNumber;
     }
 
-    public void setSecondNumber(int secondNumber) {
+    public void setSecondNumber(double secondNumber) {
         this.secondNumber = secondNumber;
     }
     
     
     @Override
-    public int getSum() {
+    public double getSum() {
 	
 	return firstNumber+secondNumber;
     }
 
     @Override
-    public int getSubtraction() {
+    public double getSubtraction() {
 	
 	return firstNumber-secondNumber;
     }
@@ -38,16 +38,16 @@ public class SimpleCalculator implements Calculator {
    
 
     @Override
-    public int getMultiplication() {
+    public double getMultiplication() {
 	return firstNumber*secondNumber;
     }
 
     @Override
-    public int getDivision() {
+    public double getDivision() {
 	return firstNumber/secondNumber;
     }
 
-    public SimpleCalculator(int firstNumber, int secondNumber) {
+    public SimpleCalculator(double firstNumber, double secondNumber) {
 	super();
 	this.firstNumber = firstNumber;
 	this.secondNumber = secondNumber;

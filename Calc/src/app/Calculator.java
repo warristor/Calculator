@@ -2,10 +2,10 @@ package app;
 
 public interface Calculator {
 
-    int getSum();
-    int getSubtraction();
-    int getMultiplication();
-    int getDivision();
+    double getSum();
+    double getSubtraction();
+    double getMultiplication();
+    double getDivision();
         
 }
 
